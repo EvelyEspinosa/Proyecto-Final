@@ -26,7 +26,7 @@ Hola, soy Melliah Samms, con 26 años y originaria de Colón, pero con la mayor 
 
 ## Referencias
 
-Inspírate en estas referencias para conocer más sobre nuestro enfoque y estilo:
+Nos inspiramos en estos sitios para nuestro enfoque y estilo:
 
 1.   [Agencia Gastro](https://www.agenciagastro.com)
 2.   [La Caballería](https://www.lacaballeria.co)
