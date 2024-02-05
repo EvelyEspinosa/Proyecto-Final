@@ -13,7 +13,7 @@ Para los títulos, utilizamos la tipografía Lobster. Su estilo friendly y llama
 Para el cuerpo del texto, elegimos la tipografía Lato. Con su sencillez y facilidad de lectura, proporciona una experiencia comprensiva y agradable.
 
 ## Paleta de Colores
-[![Colores](./coloresDF.png)]
+[![Colores](./colores.png)]
 
 - **Negro (#000000):** Representa elegancia y contraste.
 - **Beige (#FFF8E3):** Aporta calidez y suavidad.

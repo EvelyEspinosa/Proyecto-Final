@@ -28,11 +28,11 @@ Hola, soy Melliah Samms, con 26 años y originaria de Colón, pero con la mayor 
 
 Inspírate en estas referencias para conocer más sobre nuestro enfoque y estilo:
 
-1.   [Agencia Gastro](https://www.agenciagastro.com):
-2.   [La Caballería](https://www.lacaballeria.co):
-3.  [Chef Digital](https://chefdigital.es):
-4. [My Food Marketing](https://www.myfoodmarketing.com):
-5. [Gourmedia](https://gourmedia.es):
+1.   [Agencia Gastro](https://www.agenciagastro.com)
+2.   [La Caballería](https://www.lacaballeria.co)
+3.  [Chef Digital](https://chefdigital.es)
+4. [My Food Marketing](https://www.myfoodmarketing.com)
+5. [Gourmedia](https://gourmedia.es)
 
 Cada una de las páginas representa mucho de lo que queremos implementar en nuestra marca, desde los servicios hasta el estilo que buscamos reflejar en nuestra web.
 
