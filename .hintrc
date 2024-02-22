@@ -19,9 +19,12 @@
       "default",
       {
         "ignore": [
-          "contain"
+          "contain",
+          "scale",
+          "-webkit-text-size-adjust"
         ]
       }
-    ]
+    ],
+    "axe/structure": "off"
   }
 }
