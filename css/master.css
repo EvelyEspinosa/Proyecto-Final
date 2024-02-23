@@ -10,7 +10,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 /* Navbar styles */
 header {
@@ -26,6 +29,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
   
 }
 
@@ -45,11 +49,12 @@ header {
 
 /* Hero styles */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../imagen/principal/restaurant-449952_1280.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8)100%), url('../imagen/principal/restaurant-449952_1280.jpg');
     height: 100vh;
     display: flex;
     align-items: center;
     max-width: 100%;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5)
 }
 
 .hero-content {
@@ -309,4 +314,176 @@ header {
 .detail-link :hover{
     color: #FF5722
 }
-/* ... Otros estilos ... */
+
+/*footer*/
+.site-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 250px; /* Ajusta el ancho máximo según tu necesidad */
+    margin-bottom: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-contact,
+.footer-links,
+.footer-social {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-content h3{
+    color:#FF5722
+}
+
+/*mobile-first*/
+@media only screen and (max-width: 767px) {
+    /* Estilos específicos para teléfonos pequeños (320px - 767px) */
+  
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .links-and-icons {
+      margin-top: 10px;
+      text-align: center;
+    }
+  
+    .links-and-icons a {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .hero-content h1 {
+      font-size: 2em;
+    }
+  }
+  
+  /* Estilos comunes para todos los tamaños de pantalla */
+  
+  @media only screen and (max-width: 767px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo img {
+      max-width: 80%; /* Ajusta según tus necesidades */
+    }
+  
+    .links-and-icons {
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .links-and-icons a {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Hero styles */
+  .hero-content h2 {
+    font-size: 1.8em;
+  }
+  
+  .hero-content h1 {
+    font-size: 2em;
+  }
+  
+  /* About styles */
+  .about__title {
+    font-size: 1.5em;
+  }
+  
+  /* Services styles */
+  .services__element {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .services__element--best {
+    padding: 40px;
+  }
+  
+  .services__name {
+    font-size: 1.5em;
+  }
+  
+  .services__price {
+    font-size: 2em;
+  }
+  
+  .services__items {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .services__cta {
+    padding: 15px 0;
+  }
+  
+  /* Courses styles */
+  .course {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .course img {
+    width: 100%;
+  }
+  
+  .add-to-cart {
+    margin-top: 10px;
+  }
+  
+  /* Footer styles */
+  .footer-logo img {
+    max-width: 80%; /* Ajusta según tus necesidades */
+  }
+  
+  .footer-content h3 {
+    font-size: 1.5em;
+  }
+  
+  /* Other adjustments as needed */
+  
+  /* Mobile-first adjustments */
+  @media only screen and (max-width: 319px) {
+    .hero-content h1 {
+      font-size: 1.6em;
+    }
+  
+    .services__element {
+      padding: 15px;
+    }
+  
+    .services__element--best {
+      padding: 30px;
+    }
+  }
