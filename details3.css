@@ -1,0 +1,98 @@
+body {
+    color: black;
+    background-color: #fff;
+}
+
+div {
+    
+    background-image: url("https://s1.ppllstatics.com/elcorreo/www/multimedia/202006/07/media/cortadas/opi-portocarrero-kLeC-U110431176796zMD-1248x770@El%20Correo.jpg");
+    width: 1550px;
+    height: 100px;
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: 205px;
+    border-bottom: solid 3px #f37915;
+    padding-left: 0px;
+    align-items: flex-start;
+}
+
+header {
+    color: black;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 70px;
+}
+
+h1 {
+    color: #FF5722;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-left: 120px;
+    padding-right: 90px;
+}
+
+article {
+    color: black;
+    text-align: justify;
+    font-size: 25px;
+    padding-left: 115px;
+    padding-right: 115px;
+}
+
+p {
+    padding-left: 490px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+footer{
+    background-color: #000;
+}
+
+.site-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.footer-logo img {
+    max-width: 300px; /* Ajusta el ancho máximo según tu necesidad */
+    margin-bottom: 80px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-contact,
+.footer-links,
+.footer-social {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 0px;
+}
+
+.footer-content h3{
+    color:#FF5722
+}
