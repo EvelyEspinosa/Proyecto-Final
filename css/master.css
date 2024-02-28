@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar styles */
+header {
+    background-color: #fff;
+    
+}
+
+.container{
+    border: 0
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  
+}
+
+.logo img {
+    max-height: 40px;
+}
+
+.links-and-icons a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-right: 2em;
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
+
+
+
+/* Hero styles */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8)100%), url('../imagen/principal/restaurant-449952_1280.jpg');
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+    background-repeat: repeat;
+    
+}
+
+.hero-content {
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: #FF57228c;
+}
+
+.hero-content h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.hero-content p {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.cta {
+    display: inline-block;
+    background-color: #FF5722;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
+
+.cta:hover {
+    background-color: #9F3919;
+}
+
+/*about styles */
+
+.about {
+    text-align: center;
+    background-color: #fff; /* Fondo blanco para el área about */
+    padding: 30px; /* Ajusta el espaciado según sea necesario */
+}
+
+.subtitle {
+    color: var(--color-title);
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.about__main {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.about__icons {
+    background-color: #fff;
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    padding: 13px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregamos sombreado */
+}
+
+.about__icon {
+    width: 40px;
+}
+
+.about__bg {
+    background-color: #FFF8E3;
+}
+
+/*services styles*/
+
+.services{
+    padding-bottom: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('../imagen/principal/brick-wall-1834784_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+.subtitle-service{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 2.5rem;
+    color:#fff
+}
+.services__element {
+    background-color: #000;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    padding: 40px;
+    color:#fff
+}
+
+
+
+.services__table {
+    padding-top: 60px;
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.services__element--best {
+    width: 350px;
+    padding: 60px 40px;
+    background-color: #FF7143;
+    color: #fff
+   
+}
+
+.services__name {
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.services__price {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.services__items {
+    margin-top: 35px;
+    display: grid;
+    gap: 1em;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.services__cta {
+    display: block;
+    padding: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #FF5722;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .9);
+}
+
+
+/*course*/
+
+.courses-section {
+    padding: 20px;
+    background-color: #000; 
+    color: #fff; 
+    
+}
+
+.course-title{
+    text-align: center;
+    font-size:2.5em;
+}
+
+.courses{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    
+}
+
+.course {
+    width: 300px; /* Establecer un ancho fijo para el cuadro */
+    box-sizing: border-box;
+    margin-right: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.course h3 {
+    font-size: 1.5em;
+}
+
+.course img {
+    width: 100%;
+    height: auto;
+}
+
+.add-to-cart {
+    background-color: #FF5722;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Añadir un espacio entre el texto y el botón */
+}
+
+.details-link {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px; 
+}
+
+.course {
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: 20px;
+    scroll-snap-align: start;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #000;
+    padding: 2em
+}
+
+.course h3 {
+    font-size: 1.5em;
+}
+
+.course img {
+    width: 100%;
+    height: auto;
+}
+
+.price__before{
+    font-size:1.5em;
+    color:#fff;
+    text-decoration:line-through;
+}
+.price{
+    font-size: 2.5em;
+    color: #FF5722;
+}
+
+.add-to-cart {
+    background-color: #FF5722;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.details-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.detail-link :hover{
+    color: #FF5722
+}
+
+/*footer*/
+.site-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 250px; /* Ajusta el ancho máximo según tu necesidad */
+    margin-bottom: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-contact,
+.footer-links,
+.footer-social {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-content h3{
+    color:#FF5722
+}
+

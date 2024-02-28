@@ -5,7 +5,8 @@
 
 
 body{
-    background-image: url(food.webp);
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/4543001/pexels-photo-4543001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
 
 
@@ -19,12 +20,14 @@ body{
     font-family: "lobster";
     color: #000000;
     box-shadow: 7px 13px 37px #ff5722;
+    
 }
 
 
 .form-register h4{
     font-size: 22px;
     margin-bottom: 20px;
+    
 }
 
 
@@ -48,9 +51,12 @@ body{
     line-height: 40px;
 }
 
+.form-register a{
+    color:#000000
+}
 
 .form-register a:hover{
-    color: black;
+    color: #ff5722;
     text-decoration: underline;
 }
 

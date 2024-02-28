@@ -3,137 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Foodie</title>
+    <title>Digital foodie</title>
     <link rel="shortcut icon" href="imagen/favicon (2).png" type="image/x-icon">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+  
+   
+    <script src="js/login.js" defer></script>
+
 </head>
 <body>
-    <header class="hero">
-        <div class="nav__bg">
-        <nav class="nav container" >
-            <div class="nav__logo">
-                <img src="imagen/principal/logoOrigin.png" alt="">
+    <header>
+                                 <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="imagen/principal/logoOrigin.png" alt="Logo">
             </div>
-            <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="#" class="nav__links">Home</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#" class="nav__links">Marketing</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#" class="nav__links">Cursos</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#" class="nav__links">Sobre nosotros</a>
-                </li>
-                <a href="productCart.html" class="nav__links">
+            <div class="links-and-icons">
+                <a href="index.html">Inicio</a>
+                <a href="#cursos">Cursos</a>
+                <a href="#">Marketing</a>
+                <a href="productCart.html" class="fas fa-shopping-cart">
                     <img src="imagen/principal/car-add.svg" alt="car">
                   </a>
-                <a href="login.html" class="nav__links">
+
+                <a href="#" class="fas fa-user" id="openLogin">
                     <img src="imagen/principal/user.svg" alt="login">
                   </a>
-
-                <img src="imagen/principal/close.svg" alt="close" class="nav__close">
-            </ul>
-            <div class="nav__menu">
-                <img src="imagen/principal/menu.svg" alt="menu" class="nav__img">
+ 
             </div>
         </nav>
-    </div>
-        <section class="hero__container container">
-            <h2 class="hero__subtitle">ASEGURAMOS TU ÉXITO </h2>
-            <h1 class="hero__title">SÓLO NOS TOMA 15 DÍAS TRANSFORMAR TU RESTAURANTE EN UN FESTÍN DIGITAL </h1>
-           
-            <p class="hero__paragraphs"> ¿Estás listo para dar el salto al mundo digital o te quedarás al margen? La elección es tuya. ¡Únete y haz que tu restaurante brille en la era digital! </p>
-            <a href="#" class="cta">Agenda tu llamada</a>
+                             <!-- banner hero-->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Aseguramos tu éxito</h2>
+                <h1>SÓLO NOS TOMA 15 DÍAS TRANSFORMAR TU RESTAURANTE EN UN FESTÍN DIGITAL</h1>
+                <p>¿Estás listo para dar el salto al mundo digital o te quedarás al margen? La elección es tuya. ¡Únete y haz que tu restaurante brille en la era digital!</p>
+                <a href="#" class="cta">Agenda tu llamada</a>
+            </div>
         </section>
-        <div class="header_bg"></div>
     </header>
-    <main>
-        <div class="about__bg">
-       <section class="container about">
-       <h2 class="subtitle">¿Por qué Lo Necesito?</h2>
-       
-       <div class="about__main">
-            <article class="about__icons">
-                <img src="./imagen/principal/money.svg" alt="money" class="about__icon">
-                <h3 class="about__title">Aumento de Clientes y Ventas:</h3>
-                <p class="about__paragraphs">El gastromarketing te permite destacar entre la competencia, atrayendo a nuevos clientes a tu restaurante. Utilizamos estrategias que resaltan tus platos, crean experiencias únicas y generan curiosidad. Al captar la atención de más clientes potenciales, aumentamos las visitas y, en última instancia, impulsamos tus ventas.
-                </p>
-            </article>
-            <article class="about__icons">
-                <img src="./imagen/principal/digitalP.svg" alt="money" class="about__icon">
-                <h3 class="about__title">Presencia Digital que Conquista:</h3>
-                <p class="about__paragraphs">Hoy en día, la mayoría de las decisiones de restaurantes comienzan en línea. Con nuestro servicio de gastromarketing, optimizamos tu presencia en plataformas digitales. Desde redes sociales a reseñas en línea, te destacamos en la mente de tus clientes antes de que lleguen a tu puerta. Una presencia digital fuerte se traduce en más reservas y pedidos.
-                </p>
-            </article>
-            <article class="about__icons">
-                <img src="./imagen/principal/person.svg" alt="money" class="about__icon">
-                <h3 class="about__title">Fidelización y Comunidad Leal:</h3>
-                <p class="about__paragraphs">El gastromarketing no solo se trata de atraer nuevos clientes, sino también de mantener a los existentes. Creamos experiencias que generan recuerdos duraderos, construyendo una comunidad leal alrededor de tu restaurante. Desde eventos exclusivos hasta programas de recompensas, mantenemos a tus clientes volviendo por más, asegurando una base sólida de clientes fieles.
-                </p>
-            </article>
-       </div>
 
-    <div class="price__bg">
-       <section class="price container">
-        <h2 class="subtitle">Obtén algunos de nuestros cursos</h2>
-    
-        <div class="price__table">
-            <div class="price__element">
-                <img src="./imagen/principal/menuImg.jpg" alt="Curso Desarrollo de Menú">
-                <p class="price__name">Desarrollo de Menú y Tendencias Gastronómicas</p>
-                <h3 class="price__price">$9.99</h3>
-    
-                <div class="price__items">
-                    <p class="price__features">Creación de Menús Atractivos</p>
-                    <p class="price__features">Adaptación a Tendencias Actuales</p>
-                    <p class="price__features">Presentación de Platos</p>
+    <main>
+                             <!-- Section de servicios -->
+        <section class="services container">
+            <h2 class="subtitle-service">Elige el plan perfecto para tu restaurante</h2>
+        
+            <div class="services__table">
+                <div class="services__element">
+                    <p class="services__name">Básico</p>
+                    <h3 class="services__price">Contactar</h3>
+        
+                    <div class="services__items">
+                        <p class="services__features">Diseño de Sitio Web</p>
+                        <p class="services__features">Presencia en Redes Sociales</p>
+                        <p class="services__features">Campañas de Email Marketing</p>
+                    </div>
+        
+                    <a href="#" class="services__cta">Agenda tu llamada</a>
                 </div>
-    
-                <a href="#" class="price__cta">Empieza ahora</a>
-                <a href="#" class="price__details">Más detalles</a>
+        
+                <div class="services__element services__element--best">
+                    <p class="services__name">Pro</p>
+                    <h3 class="services__price">Contactar</h3>
+        
+                    <div class="services__items">
+                        <p class="services__features">Estrategia SEO Local</p>
+                        <p class="services__features">Publicidad Online</p>
+                        <p class="services__features">Programas de Lealtad y Descuentos</p>
+                    </div>
+        
+                    <a href="#" class="services__cta">Agenda tu llamada</a>
+                </div>
+        
+                <div class="services__element">
+                    <p class="services__name">Premium</p>
+                    <h3 class="services__price">Contactar</h3>
+        
+                    <div class="services__items">
+                        <p class="services__features">Experiencias Inmersivas</p>
+                        <p class="services__features">Eventos y Colaboraciones</p>
+                        <p class="services__features">Análisis Avanzado y Consultoría Estratégica</p>
+                    </div>
+        
+                    <a href="#" class="services__cta">Agenda tu llamada</a>
+                </div>
             </div>
+        </section>
+                     <!-- Section de cursos -->
+        <section id="cursos" class="courses-section">
+            <h2 class="course-title">Nuestros Cursos</h2>
     
-            <!-- Repite el mismo patrón para los otros cursos -->
+            <div class="courses">
+                <!-- Curso 1 -->
+                <article class="course">
+                    <img src="imagen/principal/menuImg.jpg" alt="Curso 1">
+                    <h3>Desarrollo de Menú y Tendencias</h3>
+                    <p class="price__before">39.99</p>
+                    <p class="price">$9.99</p>
+                    <ul class="list__course">
+                        <li>Creación de Menús</li>
+                        <li>Adaptación a Tendencias</li>
+                        <li>Presentación de Platos</li>
+                    </ul>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                    <a href="details1.html" class="details-link">Más Detalles>></a>
+                </article>
     
-            <div class="price__element">
-                <img src="./imagen/principal/redesSociales.jpg" alt="Curso Estrategias de Redes Sociales">
-                <p class="price__name">Estrategias de Marketing en Redes Sociales para Restaurantes</p>
-                <h3 class="price__price">$9.99</h3>
+                <!-- Curso 2 -->
+                <article class="course">
+                    <img src="imagen/principal/redesSociales.jpg" alt="Curso 2">
+                    <h3>Estrategias de Marketing en Redes Sociales para Restaurantes</h3>
+                    <p class="price__before">39.99</p>
+                    <p class="price">$9.99</p>
+                    <ul class="list__course">
+                        <li>Gestión de Perfiles en Redes Sociales</li>
+                        <li>Contenido Atractivo</li>
+                        <li>Publicidad Específica para la Industria Alimentaria</li>
+                    </ul>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                    <a href="details2.html" class="details-link">Más Detalles>></a>
+                </article>
     
-                <div class="price__items">
-                    <p class="price__features">Gestión de Perfiles en Redes Sociales</p>
-                    <p class="price__features">Contenido Atractivo</p>
-                    <p class="price__features">Publicidad Específica para la Industria Alimentaria</p>
-                </div>
-    
-                <a href="#" class="price__cta">Empieza ahora</a>
-                <a href="#" class="price__details">Más detalles</a>
+                <!-- Curso 3 -->
+                <article class="course">
+                    <img src="imagen/principal/costos.jpg" alt="Curso 3">
+                    <h3>Gestión Efectiva de Costos en Restaurantes</h3>
+                    <p class="price__before">39.99</p>
+                    <p class="price">$9.99</p>
+                    <ul class="list__course">
+                        <li>Control de Inventarios</li>
+                        <li>Optimización de Menús</li>
+                        <li>Análisis Financiero</li>
+                    </ul>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                    <a href="details3.html" class="details-link">Más Detalles>></a>
+                </article>
             </div>
-    
-            <div class="price__element">
-                <img src="imagen/principal/costos.jpg" alt="Curso Gestión Efectiva de Costos">
-                <p class="price__name">Gestión Efectiva de Costos en Restaurantes</p>
-                <h3 class="price__price">$Z/mes</h3>
-    
-                <div class="price__items">
-                    <p class="price__features">Control de Inventarios</p>
-                    <p class="price__features">Optimización de Menús</p>
-                    <p class="price__features">Análisis Financiero</p>
+        </section>
+        <div class="about__bg">
+            <section class="container about">
+                <h2 class="subtitle">¿Por Qué Lo Necesito?</h2>
+        
+                <div class="about__main">
+                    <article class="about__icons">
+                        <img src="./imagen/principal/money.svg" alt="money" class="about__icon">
+                        <h3 class="about__title">Aumento de Clientes y Ventas:</h3>
+                        <p class="about__paragraphs">El gastromarketing te permite destacar entre la competencia, atrayendo a nuevos clientes a tu restaurante. Utilizamos estrategias que resaltan tus platos, crean experiencias únicas y generan curiosidad. Al captar la atención de más clientes potenciales, aumentamos las visitas y, en última instancia, impulsamos tus ventas.
+                        </p>
+                    </article>
+                    <article class="about__icons">
+                        <img src="./imagen/principal/digitalP.svg" alt="digital" class="about__icon">
+                        <h3 class="about__title">Presencia Digital que Conquista:</h3>
+                        <p class="about__paragraphs">Hoy en día, la mayoría de las decisiones de restaurantes comienzan en línea. Con nuestro servicio de gastromarketing, optimizamos tu presencia en plataformas digitales. Desde redes sociales a reseñas en línea, te destacamos en la mente de tus clientes antes de que lleguen a tu puerta. Una presencia digital fuerte se traduce en más reservas y pedidos.
+                        </p>
+                    </article>
+                    <article class="about__icons">
+                        <img src="./imagen/principal/person.svg" alt="person" class="about__icon">
+                        <h3 class="about__title">Fidelización y Comunidad Leal:</h3>
+                        <p class="about__paragraphs">El gastromarketing no solo se trata de atraer nuevos clientes, sino también de mantener a los existentes. Creamos experiencias que generan recuerdos duraderos, construyendo una comunidad leal alrededor de tu restaurante. Desde eventos exclusivos hasta programas de recompensas, mantenemos a tus clientes volviendo por más, asegurando una base sólida de clientes fieles.
+                        </p>
+                    </article>
                 </div>
-    
-                <a href="#" class="price__cta">Empieza ahora</a>
-                <a href="#" class="price__details">Más detalles</a>
+            </section>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-logo">
+            <img src="imagen/principal/dfnaranja.png" alt="Logo">
+        </div>
+        <div class="footer-content">
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <p>Dirección: Calle Principal, Ciudad</p>
+                <p>Teléfono: +123 456 789</p>
+                <p>Email: info@tusitio.com</p>
+            </div>
+            <div class="footer-links">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                   
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <a href="https//:www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="imagen/principal/facebook.svg" alt=""></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="imagen/principal/twitter.svg" alt=""></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="imagen/principal/instagram.svg" alt=""></a>
             </div>
         </div>
-        </section>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tu Sitio Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Ventana emergente de inicio de sesión -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeLogin">&times;</span>
+        <form>
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="rememberPassword" class="remember-password-label">
+                <input type="checkbox" id="rememberPassword">
+                Guardar contraseña
+            </label>
+
+            <a href="#" class="login__link">¿Olvidaste tu contraseña?</a>
+            <a href="register.html" class="login__link">¿No tienes cuenta? Regístrate.</a>
+
+            <button type="button" id="loginButton">Iniciar sesión</button>
+        </form>
     </div>
-
-    </main>
-
+</div>
 </body>
 </html>
-
