@@ -1,5 +1,5 @@
 # Digital Foodie
-![Logo DF](./design/sinFondo.png)
+![Logo DF](./imagen/principal/dfsinfondo.png)
 ## Descripción de la Oferta
 
 Bienvenido a Digital Foodie, donde fusionamos la pasión por la gastronomía con estrategias digitales innovadoras. Ofrecemos servicios de marketing digital gastronómico que transforman la presencia en línea de restaurantes y negocios culinarios. Desde estrategias en redes sociales hasta desarrollo web especializado, en Digital Foodie, cada plato es una historia digital única.
