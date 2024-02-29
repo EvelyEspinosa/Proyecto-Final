@@ -98,43 +98,6 @@ header {
     background-color: #9F3919;
 }
 
-/*about styles */
-
-.about {
-    text-align: center;
-    background-color: #fff; /* Fondo blanco para el área about */
-    padding: 30px; /* Ajusta el espaciado según sea necesario */
-}
-
-.subtitle {
-    color: var(--color-title);
-    font-size: 3rem;
-    margin-bottom: 25px;
-}
-
-.about__main {
-    display: grid;
-    gap: 1em;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
-
-.about__icons {
-    background-color: #fff;
-    display: grid;
-    gap: 1em;
-    justify-items: center;
-    padding: 13px 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregamos sombreado */
-}
-
-.about__icon {
-    width: 40px;
-}
-
-.about__bg {
-    background-color: #FFF8E3;
-}
-
 /*services styles*/
 
 .services{
@@ -212,6 +175,11 @@ header {
     box-shadow: 0 0 1px rgba(0, 0, 0, .9);
 }
 
+.services__cta:hover{
+
+background-color: #9F3919;
+}
+
 
 /*course*/
 
@@ -235,7 +203,7 @@ header {
 }
 
 .course {
-    width: 300px; /* Establecer un ancho fijo para el cuadro */
+    width: 300px; 
     box-sizing: border-box;
     margin-right: 20px;
     text-align: center;
@@ -261,7 +229,7 @@ header {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px; /* Añadir un espacio entre el texto y el botón */
+    margin-top: 10px; 
 }
 
 .details-link {
@@ -312,16 +280,58 @@ header {
     cursor: pointer;
 }
 
+.add-to-cart:hover{
+    background-color: #9F3919;
+}
+
 .details-link {
     color: #fff;
     text-decoration: none;
 }
 
-.detail-link :hover{
+.details-link:hover{
     color: #FF5722
 }
 
+/*about styles */
+
+.about {
+    text-align: center;
+    background-color: #FFF8E3; 
+    padding: 30px; 
+}
+
+.subtitle {
+    color: var(--color-title);
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.about__main {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.about__icons {
+    background-color: #fff;
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    padding: 13px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about__icon {
+    width: 40px;
+}
+
+.about__bg {
+    background-color: #FFF8E3;
+}
+
 /*footer*/
+
 .site-footer {
     background-color: #000;
     color: #fff;
@@ -330,7 +340,7 @@ header {
 }
 
 .footer-logo img {
-    max-width: 250px; /* Ajusta el ancho máximo según tu necesidad */
+    max-width: 250px; 
     margin-bottom: 20px;
 }
 
