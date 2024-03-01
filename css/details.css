@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #FFF8E3;
+}
+
+/* Titulo */
+.titulo {
+    height: 700px;
+}
+
+.titulo h1 {
+    text-align: center;
+    margin: 35px;
+}
+
+article {
+    display: flex;
+    gap: 70px;
+    margin-top: 100px;
+}
+
+.descripción {
+    text-align: center;
+}
+
+.descripción h2 {
+    margin: 20px;
+}
+
+.descripción p {
+    font-weight: bold;
+    font-size: 23px;
+    text-align: justify;
+    margin: 0 25px;
+}
+
+button {
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    color: antiquewhite;
+    background-color: black;
+    cursor:pointer;
+}
+
+button:hover {
+    background-color: rgb(231, 70, 12);
+}
