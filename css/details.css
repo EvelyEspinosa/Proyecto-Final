@@ -6,50 +6,119 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #FFF8E3;
 }
 
 /* Titulo */
 .titulo {
-    height: 700px;
+    background-color: #FFF8E3;
+    height: 1300px;
+    margin: 0px;
+    padding: 50px 0px 0px 0px;
 }
 
 .titulo h1 {
+    background-color:white;
+    font-size: 30px;
+    margin: 10px 200px 80px 200px;
+    height: 80px;
     text-align: center;
-    margin: 35px;
+    box-shadow: 0 5px 19px rgba(0, 0, 0); 
+}
+
+.titulo .caja-img {
+    background-color: white;
+    box-shadow: 0 8px 8px rgba(0, 0, 0); 
+    margin: 20px 0px 20px 70px;
+    padding: 10px 10px 10px 20px;
+    transition: all .5s;
+}
+
+.caja-img:hover img {
+        transform: scale(1.2);
+}
+
+.caja-img figure{
+    overflow: hidden;
+}
+
+.titulo .caja-img p {
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 article {
+    background-color: #FF5722;
     display: flex;
-    gap: 70px;
-    margin-top: 100px;
+    gap: 5px;
+    margin: 0px;
+
 }
 
 .descripción {
+    background-color: white;
     text-align: center;
+    box-shadow: 0 8px 8px rgba(0, 0, 0);
+    margin: 20px 0px 20px 80px;
+    padding: 10px 10px 10px 20px;
 }
 
 .descripción h2 {
+    background-color: black;
+    font-size: 17px;
+    color: white;
+    padding: 20px;
     margin: 20px;
 }
 
-.descripción p {
+.descripción ul {
     font-weight: bold;
     font-size: 23px;
     text-align: justify;
     margin: 0 25px;
 }
 
+.descripción h3 {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 40px;
+    padding: 10px;
+}
+
 button {
     font-size: 20px;
-    margin: 20px;
+    margin: 40px;
     padding: 10px;
     border-radius: 10px;
     color: antiquewhite;
-    background-color: black;
+    background-color: #FF5722;
     cursor:pointer;
 }
 
 button:hover {
-    background-color: rgb(231, 70, 12);
+    background-color: #9F3919;
+}
+
+.descripción2 {
+    background-color: white;
+    text-align: center;
+    margin: 100px;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.1);      
+}
+
+.titulo .descripción2 p1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 80px;
+}
+
+.titulo .descripción2 p2 {
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
 }
