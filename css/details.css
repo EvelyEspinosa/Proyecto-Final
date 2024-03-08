@@ -28,9 +28,8 @@ body {
 
 .titulo .caja-img {
     background-color: white;
+    height: 460px;
     box-shadow: 0 8px 8px rgba(0, 0, 0); 
-    margin: 20px 0px 20px 70px;
-    padding: 10px 10px 10px 20px;
     transition: all .5s;
 }
 
@@ -60,6 +59,7 @@ article {
 .descripción {
     background-color: white;
     text-align: center;
+    overflow: hidden;
     box-shadow: 0 8px 8px rgba(0, 0, 0);
     margin: 20px 0px 20px 80px;
     padding: 10px 10px 10px 20px;
@@ -67,6 +67,7 @@ article {
 
 .descripción h2 {
     background-color: black;
+    overflow: hidden;
     font-size: 17px;
     color: white;
     padding: 20px;
@@ -106,8 +107,7 @@ button:hover {
 .descripción2 {
     background-color: white;
     text-align: center;
-    margin: 100px;
-    padding: 50px;
+    margin: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0.1);      
 }
 
@@ -122,4 +122,9 @@ button:hover {
     text-align: center;
     font-size: 25px;
     padding: 30px;
+}
+@media (max-width:460px){
+    .carrito-item{
+        flex-direction: column;
+    }
 }
