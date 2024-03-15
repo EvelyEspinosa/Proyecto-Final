@@ -5,6 +5,7 @@
     }
     .header-carrito{
         text-align: center;
+        font-family: 'lato', sans-serif;
     }
     main{
         background-color: beige;
@@ -17,22 +18,21 @@
         gap:1em;
         grid-gap: 10px;
         grid-row-gap: 15px;
-        transition: 3s;
+        align-items: center;
+        width: 100%;
+        transition: 5s;
         padding: 4%;
-        margin: auto;
-        border: 2px solid #666;
-        border-radius: 20px;
-        transition: 3s;
     }
     .carrito-item{
         display:flex;
-        margin-bottom: 30px;
-        box-shadow: 0 0 10px #666;
+        margin-bottom: 20px;
+        box-shadow: 0 0 15px #474545;
         border-radius: 20px;
         flex-direction:row;
         padding: 15px;
         align-items: center;
-        justify-content: space-between;
+        overflow: hidden;
+        justify-content:space-between;
     }
     .carrito-item-titulo{
         display: block;
@@ -44,24 +44,23 @@
         display: block;
         text-align: center;
         font-weight: bold;
-        font-size: 22px;
+        font-size: 20px;
+        color:#ff5722;
     }
     .carrito-img{
         display: flex;
-        width: 250px;
-        height: 250px;
+        width: 160px;
+        height: 160px;
         align-items: center;
-        top: 0;
-        left: 250px;
-        padding-bottom: 15px;
+        left: 200px;
     }
     .total{
         display: flex;
-        padding: 2%;
+        padding: 1%;
         margin-top: 20px;
         justify-content: space-between;
-        background-color: #cecdcd;
-        border-radius: 20px;
+        background-color: #9d9c9c;
+        border-radius: 15px;
     }
     .styled{
         border: 0;
@@ -72,7 +71,7 @@
         color: #fff;
         text-shadow: 1px 1px 1px #000;
         border-radius: 10px;
-        background-color: rgb(220 0 0 / 100%);
+        background-color: #f76b33;
         background-image: linear-gradient(to top left,
         rgb(0 0 0 /20%),
         rgb(0 0 0 / 20%) 30%,
@@ -84,12 +83,26 @@
     }
     
     .styled:hover {
-      background-color: rgb(255 0 0 / 100%);
+      background-color: #ff5722;
     }
     
     .styled:active {
       box-shadow:
         inset -2px -2px 3px rgb(255 255 255 / 60%),
-        inset 2px 2px 3px rgb(0 0 0 / 60%);
+        inset 2px 3px 3px rgb(0 0 0 / 60%);
     }
-    
+    .modo-pago{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .pay-icon{
+    padding-top: 20px;
+    font-size: 25px;
+    }
+
+    @media (max-width:460px){
+        .carrito-item{
+            flex-direction: column;
+        }
+    }
