@@ -1,15 +1,20 @@
-function toggleMenu() {
-    var links = document.querySelector('.links-and-icons');
-    links.style.display = (links.style.display === 'block') ? 'none' : 'block';
-  }
+document.addEventListener('DOMContentLoaded', function () {
+  const burgerMenuIcon = document.querySelector('.burger-menu');
+  const menuModal = document.getElementById('menuModal');
+  const closeMenuButton = document.getElementById('closeMenu');
 
-  function toggleMenu() {
-    var linksAndIcons = document.getElementById("linksAndIcons");
-    var mobileMenu = document.getElementById("mobileMenu");
+  burgerMenuIcon.addEventListener('click', function () {
+      menuModal.style.display = 'block';
+  });
 
-    // Cambia la visibilidad del contenedor de enlaces e íconos
-    linksAndIcons.style.display = (linksAndIcons.style.display === 'none' || linksAndIcons.style.display === '') ? 'flex' : 'none';
+  closeMenuButton.addEventListener('click', function () {
+      menuModal.style.display = 'none';
+  });
 
-    // Muestra u oculta el contenedor de menú móvil
-    mobileMenu.style.display = (mobileMenu.style.display === 'none' || mobileMenu.style.display === '') ? 'flex' : 'none';
-}
+  window.addEventListener('click', function (event) {
+      if (event.target === menuModal) {
+          menuModal.style.display = 'none';
+      }
+  });
+});
+
