@@ -407,6 +407,14 @@ background-color: #9F3919;
     .footer-social {
         margin-top: 0; 
     }
+
+    .links-and-icons2 a{
+        color:#fff;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+       padding: 2em;
+    }
 }
 
 

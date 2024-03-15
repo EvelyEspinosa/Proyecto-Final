@@ -18,24 +18,22 @@
 <body>
     <header>
                                  <!-- Navbar -->
-        <nav class="navbar">
-            <div class="logo">
-                <img src="imagen/principal/logoOrigin.png" alt="Logo">
-            </div>
-            <div class="links-and-icons">
-                <a href="index.html">Inicio</a>
-                <a href="#cursos">Cursos</a>
-                <a href="#">Marketing</a>
-                <a href="productCart.html" class="fas fa-shopping-cart"></a>
+       <nav class="navbar">
+        <div class="logo">
+            <img src="imagen/principal/logoOrigin.png" alt="Logo">
+        </div>
+        <div class="links-and-icons">
+            <a href="index.html">Inicio</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#servicios">Marketing</a>
+            <a href="productCart.html" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user" id="openLogin"></a>
+        </div>
+        <div class="burger-menu" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
 
-                <a href="#" class="fas fa-user" id="openLogin"></a>
- 
-            </div>
-            <div class="burger-menu" onclick="toggleMenu()">
-                <i class="fas fa-bars"></i>
-            </div>
-           
-        </nav>
                              <!-- banner hero-->
         <section class="hero">
             <div class="hero-content">
@@ -49,7 +47,7 @@
 
     <main>
                              <!-- Section de servicios -->
-        <section class="services container">
+        <section class="services container" id="servicios">
             <h2 class="subtitle-service">Elige el plan perfecto para tu restaurante</h2>
         
             <div class="services__table">
@@ -195,9 +193,9 @@
             </div>
             <div class="footer-social">
                 <h3>Síguenos</h3>
-                <a href="https//:www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="imagen/principal/facebook.svg" alt=""></a>
-                <a href="#" target="_blank" rel="noopener noreferrer"><img src="imagen/principal/twitter.svg" alt=""></a>
-                <a href="#" target="_blank" rel="noopener noreferrer"><img src="imagen/principal/instagram.svg" alt=""></a>
+                <a href="https//:www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="imagen/principal/facebook.svg" alt="FB"></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="imagen/principal/twitter.svg" alt="X"></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="imagen/principal/instagram.svg" alt="IG"></a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -206,28 +204,38 @@
     </footer>
 
     <!-- Ventana emergente de inicio de sesion -->
-<div id="loginModal" class="modal">
-    <div class="modal-content">
-        <span class="close" id="closeLogin">&times;</span>
-        <form>
-            <label for="username">Nombre de usuario:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
-
-            <label for="rememberPassword" class="remember-password-label">
-                <input type="checkbox" id="rememberPassword">
-                Guardar contraseña
-            </label>
-
-            <a href="#" class="login__link">¿Olvidaste tu contraseña?</a>
-            <a href="register.html" class="login__link">¿No tienes cuenta? Regístrate.</a>
-
-            <button type="button" id="loginButton">Iniciar sesión</button>
-        </form>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <form>
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="rememberPassword" class="remember-password-label">
+                    <input type="checkbox" id="rememberPassword">
+                    Guardar contraseña
+                </label>
+                <a href="#" class="login__link">¿Olvidaste tu contraseña?</a>
+                <a href="register.html" class="login__link">¿No tienes cuenta? Regístrate.</a>
+                <button type="button" id="loginButton">Iniciar sesión</button>
+                <div class="errores"></div>
+            </form>
+        </div>
     </div>
-</div>
+
+            <!-- Ventana emergente de menu de hamburguesa -->
+    <div id="menuModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeMenu">&times;</span>
+            <div class="links-and-icons2">
+                <a href="index.html">Inicio</a>
+                <a href="#cursos">Cursos</a>
+                <a href="#servicios">Marketing</a>
+                <a href="productCart.html" class="fas fa-shopping-cart"></a>
+            </div>
+        </div>
+    </div>
 
 <script src="js/login.js" defer></script>
 <script src="js/menu.js"></script>
