@@ -5,8 +5,6 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Lato', sans-serif;
 }
 
@@ -29,7 +27,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
   
 }
 
@@ -42,6 +41,9 @@ header {
     color: #000;
     font-weight: bold;
     margin-right: 2em;
+    position: relative;
+    right: 0;
+    top: 0;
 }
 
 
@@ -51,10 +53,12 @@ header {
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8)100%), url('../imagen/principal/restaurant-449952_1280.jpg');
     height: 100vh;
-    display: flex;
+    display: grid;
     align-items: center;
     max-width: 100%;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5)
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+    background-repeat: repeat;
+    
 }
 
 .hero-content {
@@ -94,51 +98,15 @@ header {
     background-color: #9F3919;
 }
 
-/*about styles */
-
-.about {
-    text-align: center;
-    background-color: #fff; /* Fondo blanco para el área about */
-    padding: 30px; /* Ajusta el espaciado según sea necesario */
-}
-
-.subtitle {
-    color: var(--color-title);
-    font-size: 3rem;
-    margin-bottom: 25px;
-}
-
-.about__main {
-    display: grid;
-    gap: 1em;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
-
-.about__icons {
-    background-color: #fff;
-    display: grid;
-    gap: 1em;
-    justify-items: center;
-    padding: 13px 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregamos sombreado */
-}
-
-.about__icon {
-    width: 40px;
-}
-
-.about__bg {
-    background-color: #FFF8E3;
-}
-
 /*services styles*/
 
 .services{
     padding-bottom: 50px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('../imagen/principal/brick-wall-1834784_1280.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('../imagen/principal/brick-wall-1834784_1280.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    max-width: 100%;
 }
 .subtitle-service{
     padding-top: 15px;
@@ -150,7 +118,7 @@ header {
     background-color: #000;
     text-align: center;
     border-radius: 10px;
-    width: 330px;
+    width: 300px;
     padding: 40px;
     color:#fff
 }
@@ -159,15 +127,15 @@ header {
 
 .services__table {
     padding-top: 60px;
-    display: flex; /* Cambiado a flex para que los elementos estén en línea */
+    display: flex; 
     flex-wrap: wrap;
-    gap: 2.5em;
+    gap: 2em;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .services__element--best {
-    width: 370px;
+    width: 350px;
     padding: 60px 40px;
     background-color: #FF7143;
     color: #fff
@@ -207,6 +175,11 @@ header {
     box-shadow: 0 0 1px rgba(0, 0, 0, .9);
 }
 
+.services__cta:hover{
+
+background-color: #9F3919;
+}
+
 
 /*course*/
 
@@ -214,7 +187,7 @@ header {
     padding: 20px;
     background-color: #000; 
     color: #fff; 
-  height: 110vh;
+    
 }
 
 .course-title{
@@ -223,15 +196,16 @@ header {
 }
 
 .courses{
-    display: flex;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     
 }
 
 .course {
-    width: 300px; /* Establecer un ancho fijo para el cuadro */
+    width: 300px; 
     box-sizing: border-box;
     margin-right: 20px;
-    scroll-snap-align: start;
     text-align: center;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -255,7 +229,7 @@ header {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px; /* Añadir un espacio entre el texto y el botón */
+    margin-top: 10px; 
 }
 
 .details-link {
@@ -306,16 +280,58 @@ header {
     cursor: pointer;
 }
 
+.add-to-cart:hover{
+    background-color: #9F3919;
+}
+
 .details-link {
     color: #fff;
     text-decoration: none;
 }
 
-.detail-link :hover{
+.details-link:hover{
     color: #FF5722
 }
 
+/*about styles */
+
+.about {
+    text-align: center;
+    background-color: #FFF8E3; 
+    padding: 30px; 
+}
+
+.subtitle {
+    color: var(--color-title);
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.about__main {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.about__icons {
+    background-color: #fff;
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    padding: 13px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about__icon {
+    width: 40px;
+}
+
+.about__bg {
+    background-color: #FFF8E3;
+}
+
 /*footer*/
+
 .site-footer {
     background-color: #000;
     color: #fff;
@@ -324,7 +340,7 @@ header {
 }
 
 .footer-logo img {
-    max-width: 250px; /* Ajusta el ancho máximo según tu necesidad */
+    max-width: 250px; 
     margin-bottom: 20px;
 }
 
@@ -358,132 +374,44 @@ header {
     color:#FF5722
 }
 
-/*mobile-first*/
-@media only screen and (max-width: 767px) {
-    /* Estilos específicos para teléfonos pequeños (320px - 767px) */
-  
-    .navbar {
-      flex-direction: column;
-      align-items: center;
+.burger-menu {
+    display: none; 
+    
+}
+
+/*mobile*/
+@media screen and (max-width: 767px) {
+    .burger-menu {
+        display: flex;
+        margin-right: 20px; 
     }
-  
+
     .links-and-icons {
-      margin-top: 10px;
-      text-align: center;
+        display: none; 
     }
-  
-    .links-and-icons a {
-      display: block;
-      margin-bottom: 10px;
-    }
-  
-    .hero-content h1 {
-      font-size: 2em;
-    }
-  }
-  
-  /* Estilos comunes para todos los tamaños de pantalla */
-  
-  @media only screen and (max-width: 767px) {
+
     .navbar {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column; 
     }
-  
-    .logo img {
-      max-width: 80%; /* Ajusta según tus necesidades */
-    }
-  
-    .links-and-icons {
-      text-align: center;
-      margin-top: 10px;
-    }
-  
+
     .links-and-icons a {
-      display: block;
-      margin-bottom: 10px;
+        display: block;
+        margin-bottom: 10px;
     }
-  }
-  
-  /* Hero styles */
-  .hero-content h2 {
-    font-size: 1.8em;
-  }
-  
-  .hero-content h1 {
-    font-size: 2em;
-  }
-  
-  /* About styles */
-  .about__title {
-    font-size: 1.5em;
-  }
-  
-  /* Services styles */
-  .services__element {
-    width: 100%;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .services__element--best {
-    padding: 40px;
-  }
-  
-  .services__name {
-    font-size: 1.5em;
-  }
-  
-  .services__price {
-    font-size: 2em;
-  }
-  
-  .services__items {
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-  
-  .services__cta {
-    padding: 15px 0;
-  }
-  
-  /* Courses styles */
-  .course {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-  
-  .course img {
-    width: 100%;
-  }
-  
-  .add-to-cart {
-    margin-top: 10px;
-  }
-  
-  /* Footer styles */
-  .footer-logo img {
-    max-width: 80%; /* Ajusta según tus necesidades */
-  }
-  
-  .footer-content h3 {
-    font-size: 1.5em;
-  }
-  
-  /* Other adjustments as needed */
-  
-  /* Mobile-first adjustments */
-  @media only screen and (max-width: 319px) {
-    .hero-content h1 {
-      font-size: 1.6em;
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center; 
     }
-  
-    .services__element {
-      padding: 15px;
+
+    .footer-social {
+        margin-top: 0; 
     }
+}
+
+
+
   
-    .services__element--best {
-      padding: 30px;
-    }
-  }
+
+
+
