@@ -8,7 +8,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-/* Titulo */
+/* Titulo   #FFF8E3 */
 .titulo {
     background-color: #FFF8E3;
     height: 1300px;
@@ -17,7 +17,7 @@ body {
 }
 
 .titulo h1 {
-    background-color:white;
+    background-color: white;
     font-size: 30px;
     margin: 10px 200px 80px 200px;
     padding-top: 25px;
@@ -28,9 +28,11 @@ body {
 
 .titulo .caja-img {
     background-color: white;
-    height: 460px;
+    overflow: hidden;
     box-shadow: 0 8px 8px rgba(0, 0, 0); 
     transition: all .5s;
+    margin: 20px 30px 30px 130px;
+    padding: 10px 10px 10px 20px;
 }
 
 .caja-img:hover img {
@@ -39,6 +41,7 @@ body {
 
 .caja-img figure{
     overflow: hidden;
+    margin: 10px 10px 10px 0px;
 }
 
 .titulo .caja-img p {
@@ -49,11 +52,10 @@ body {
 }
 
 article {
-    background-color: #FF5722;
+    background-color: #ff5722;
     display: flex;
     gap: 5px;
     margin: 0px;
-
 }
 
 .descripción {
@@ -61,7 +63,7 @@ article {
     text-align: center;
     overflow: hidden;
     box-shadow: 0 8px 8px rgba(0, 0, 0);
-    margin: 20px 0px 20px 80px;
+    margin: 20px 0px 30px 80px;
     padding: 10px 10px 10px 20px;
 }
 
@@ -107,22 +109,23 @@ button:hover {
 .descripción2 {
     background-color: white;
     text-align: center;
-    margin: 50px;
+    margin: 100px 100px 100px 100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0.1);      
 }
 
-.titulo .descripción2 p1 {
+.titulo .descripción2 p6 {
     text-align: center;
     font-size: 30px;
-    padding: 80px;
+    font-weight: bold;
 }
 
-.titulo .descripción2 p2 {
-    display: flex;
+.titulo .descripción2 ul {
     text-align: center;
     font-size: 25px;
-    padding: 30px;
+    padding: 80px;
+
 }
+
 @media (max-width:460px){
     .carrito-item{
         flex-direction: column;
