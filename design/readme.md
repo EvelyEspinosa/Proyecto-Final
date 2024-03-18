@@ -17,7 +17,7 @@ Para el cuerpo del texto, elegimos la tipografía Lato. Con su sencillez y facil
 
 - **Negro (#000000):** Representa elegancia y contraste.
 - **Beige (#FFF8E3):** Aporta calidez y suavidad.
-- **Blanco (#FAF9F0):** Proporciona claridad y limpieza.
+- **Blanco (#FFFFFF):** Proporciona claridad y limpieza.
 - **Naranja (#FF5722):** Nuestra tonalidad principal, simbolizando creatividad y entusiasmo.
-
+- **Gris   (#CCCCCC):**  Equilibrada y atractiva para nuestro diseño.
 Estos colores se combinan para transmitir la energía y pasión que queremos darle en el concepto Digital Foodie.

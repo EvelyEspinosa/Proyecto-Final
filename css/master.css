@@ -68,12 +68,14 @@ header {
     margin-bottom: 10px;
     font-size: 2em;
     color: #FF57228c;
+  
 }
 
 .hero-content h1 {
     margin-bottom: 20px;
     font-size: 2.5em;
     color: #fff;
+   
 }
 
 .hero-content p {
@@ -109,7 +111,8 @@ header {
     padding-top: 15px;
     text-align: center;
     font-size: 2.5rem;
-    color:#fff
+    color:#fff;
+    font-family: "lobster";
 }
 .services__element {
     background-color: #000;
@@ -144,6 +147,8 @@ header {
     margin-bottom: 15px;
     font-weight: 300;
     font-size: 2rem;
+    font-family: "lobster";
+    font-size: 300;
 }
 
 .services__price {
@@ -190,6 +195,8 @@ background-color: #9F3919;
 .course-title{
     text-align: center;
     font-size:2.5em;
+    font-family: "lobster";
+    font-size: 300;
 }
 
 .courses{
@@ -299,9 +306,11 @@ background-color: #9F3919;
 }
 
 .subtitle {
-    color: var(--color-title);
+  
     font-size: 3rem;
     margin-bottom: 25px;
+    font-family: "lobster";
+    font-size: 300;
 }
 
 .about__main {
