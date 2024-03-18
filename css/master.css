@@ -11,17 +11,14 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    border: 0
 }
 
 /* Navbar styles */
 header {
     background-color: #fff;
-    
 }
 
-.container{
-    border: 0
-}
 .navbar {
     display: flex;
     justify-content: space-between;

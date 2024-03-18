@@ -11,49 +11,42 @@ body {
 /* Titulo */
 .titulo {
     background-color: #FFF8E3;
-    height: 1300px;
-    margin: 0px;
-    padding: 50px 0px 0px 0px;
 }
 
 .titulo h1 {
     background-color:white;
     font-size: 30px;
-    margin: 10px 200px 80px 200px;
-    padding-top: 25px;
-    height: 80px;
+    padding: 25px 0;
+    height: auto;
     text-align: center;
-    box-shadow: 0 5px 19px rgba(0, 0, 0); 
+    box-shadow: 0 5px 19px rgba(0, 0, 0);
+    margin-top: 10px;
 }
 
 .titulo .caja-img {
     background-color: white;
-    height: 460px;
     box-shadow: 0 8px 8px rgba(0, 0, 0); 
-    transition: all .5s;
+    margin: auto;
 }
-
-.caja-img:hover img {
-        transform: scale(1.2);
-}
-
 .caja-img figure{
     overflow: hidden;
 }
 
 .titulo .caja-img p {
     margin: 10px;
-    text-align: center;
+ justify-content: center;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1em;
+    color: #ccc;
 }
+
 
 article {
     background-color: #FF5722;
     display: flex;
     gap: 5px;
     margin: 0px;
-
+    flex-direction: column;
 }
 
 .descripción {
@@ -61,7 +54,7 @@ article {
     text-align: center;
     overflow: hidden;
     box-shadow: 0 8px 8px rgba(0, 0, 0);
-    margin: 20px 0px 20px 80px;
+    margin: 100px 60px;
     padding: 10px 10px 10px 20px;
 }
 
@@ -107,14 +100,15 @@ button:hover {
 .descripción2 {
     background-color: white;
     text-align: center;
-    margin: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0.1);      
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.1); 
 }
 
 .titulo .descripción2 p1 {
     text-align: center;
     font-size: 30px;
-    padding: 80px;
+    padding: 80px;   
 }
 
 .titulo .descripción2 p2 {
@@ -123,8 +117,26 @@ button:hover {
     font-size: 25px;
     padding: 30px;
 }
-@media (max-width:460px){
-    .carrito-item{
-        flex-direction: column;
-    }
+
+.site-footer{
+    width: auto;
 }
+
+@media(max-width: 368px){
+    .titulo{
+        width: 110%;
+    }
+
+    .site-footer{
+        width: 110%;
+    }
+
+    .descripción {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+
+}
+
+
